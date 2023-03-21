@@ -121,3 +121,17 @@ list.c:67:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 640ecac
+Tue 21 Mar 2023 06:08:39 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:78:20: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   78 |   return nuevo_nodo->data;
+      |          ~~~~~~~~~~^~~~~~
+list.c:67:6: note: declared here
+   67 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7b40bc0
