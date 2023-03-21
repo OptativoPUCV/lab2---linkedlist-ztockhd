@@ -76,12 +76,12 @@ void pushFront(List * list, void * data) {
     list->head = nuevo_nodo;
   }
 }
-
+//5
 void pushBack(List * list, void * data) {
     list->current = list->tail;
     pushCurrent(list,data);
 }
-//5
+
 void pushCurrent(List * list, void * data) {
 }
 
