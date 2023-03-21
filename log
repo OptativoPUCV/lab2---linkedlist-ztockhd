@@ -103,3 +103,21 @@ Tue 21 Mar 2023 05:44:23 PM UTC:
  tests:  9|3
 total_score: 35/70
 55e87f5
+Tue 21 Mar 2023 06:06:53 PM UTC: 
+ list.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:78:22: error: ‘Node’ has no member named ‘dato’; did you mean ‘data’?
+   78 |   return nuevo_nodo->dato;
+      |                      ^~~~
+      |                      data
+list.c:78:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   78 |   return nuevo_nodo->dato;
+      |          ^~~~~~~~~~
+list.c:67:6: note: declared here
+   67 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+640ecac
