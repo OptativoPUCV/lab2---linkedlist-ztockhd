@@ -27,11 +27,12 @@ Node * createNode(void * data) {
     new->next = NULL;
     return new;
 }
-
+//1
 List * createList() {
+  
      return NULL;
 }
-
+//2
 void * firstList(List * list) {
     return NULL;
 }
@@ -39,7 +40,7 @@ void * firstList(List * list) {
 void * nextList(List * list) {
     return NULL;
 }
-
+//3
 void * lastList(List * list) {
     return NULL;
 }
@@ -47,7 +48,7 @@ void * lastList(List * list) {
 void * prevList(List * list) {
     return NULL;
 }
-
+//4
 void pushFront(List * list, void * data) {
 }
 
@@ -55,7 +56,7 @@ void pushBack(List * list, void * data) {
     list->current = list->tail;
     pushCurrent(list,data);
 }
-
+//5
 void pushCurrent(List * list, void * data) {
 }
 
@@ -68,7 +69,7 @@ void * popBack(List * list) {
     list->current = list->tail;
     return popCurrent(list);
 }
-
+//6
 void * popCurrent(List * list) {
     return NULL;
 }
