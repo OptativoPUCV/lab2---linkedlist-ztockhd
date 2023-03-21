@@ -29,19 +29,22 @@ Node * createNode(void * data) {
 }
 //1
 List * createList() {
-    List * lista = (List *)malloc(sizeof(List));
-    if(lista == NULL) return NULL;
-    lista->head = NULL;
-    lista->tail = NULL;
-    return lista;
+    List * list = (List *)malloc(sizeof(List));
+    if(list == NULL) return NULL;
+    list->head = NULL;
+    list->tail = NULL;
+    return list;
 }
 //2
 void * firstList(List * list) {
-    return NULL;
+    if(list->head == NULL) return NULL;
+    list->current = list->head;
+    return list->current->data;
 }
 
 void * nextList(List * list) {
-    return NULL;
+    if(list->current == NULL) return NULL;
+    return list->current->next;
 }
 //3
 void * lastList(List * list) {
