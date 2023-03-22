@@ -75,6 +75,7 @@ void pushFront(List * list, void * data) {
     list->head->prev = nuevo_nodo;
     list->head = nuevo_nodo;
   }
+  return;
 }
 
 void pushBack(List * list, void * data) {
